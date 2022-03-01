@@ -86,13 +86,13 @@
 
 header img {
   position: absolute;
-  top: 3%;
+  top: 4%;
   left: 50%;
   transform: translateX(-50%);
 }
 nav img {
   position: absolute;
-  top: 3%;
+  top: 4%;
   left: 97%;
   transform: translateX(-97%);
   color: white;
