@@ -34,7 +34,7 @@
   
   [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 1rem;
   }
   .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -156,7 +156,7 @@ footer a img {
     .container {
         width: 100%;}
 .first-section h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   padding: 1rem;
 }
 header img{
@@ -174,18 +174,22 @@ header img{
     padding: 0 1rem;
 }
 [class*="col-"] {
-    width: 50%;
+    width: 100%;
   }
   .second-section h2 {
     font-family: Akkurat Pro;
-    margin-top: 0rem;
+    margin: 0;
   }
   .outer-wrap {
+     
     width: 95%;
-    margin-top: 1rem; 
-    padding: 0.5rem 0;
+    padding-top: 2rem;
+    margin: auto;
     text-align: center;
          
+   }
+   footer a img{
+    top: 1%;
    }
    
 }
