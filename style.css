@@ -1,138 +1,203 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Segoe UI;
+  src: url(./fonts/Segoe\ UI.ttf);
+}
+@font-face {
+  font-family: Akkurat Pro;
+  src: url(./fonts/AkkuratPro-Bold.otf);
+}
+@font-face {
+  font-family: Akkurat Light Pro;
+  src: url(./fonts/Akkurat-Light.ttf);
+}
+@font-face {
+  font-family: Migra;
+  src: url(./fonts/Migra-Extrabold.ttf);
+}
+@font-face {
+  font-family: Grotesk BE -medium;
+  src: url(./fonts/berthold-akzidenz-grotesk-be-regular.ttf);
+}
+@font-face {
+  font-family: Grotesk BE - light;
+  src: url(./fonts/akzidenz-grotesk-light.ttf);
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-
-
-@font-face {
-    font-family: Segoe UI;
-    src: url(./fonts/Segoe\ UI.ttf);
+.container {
+  width: 80%;
+  
+  margin: auto;
+  
+  box-shadow: 0.12rem 0.31rem 0.6rem #888888;
 }
-@font-face {
-    font-family: Akkurat Pro;
-    src: url(./fonts/AkkuratPro-Bold.otf);
-}
-@font-face {
-    font-family: Akkurat Light Pro;
-    src: url(./fonts/Akkurat-Light.ttf);
-}
-@font-face {
-    font-family: Migra;
-    src: url(./fonts/Migra-Extrabold.ttf);
-}
-@font-face {
-    font-family: Grotesk BE -medium;
-    src: url(./fonts/berthold-akzidenz-grotesk-be-regular.ttf);
-}
-@font-face {
-    font-family: Grotesk BE - light;
-    src: url(./fonts/akzidenz-grotesk-light.ttf);
-}
-
-
-.container{
-    width: 71.25rem;
-    background-image: linear-gradient(to bottom, rgb(169, 149, 165), rgb(201, 224, 174));
-    margin: auto;
-    margin-top: -1rem;
-    box-shadow: 0.12rem 0.31rem 0.6rem #888888;
-    
-}
-.first-section{
-    position: relative;
+.first-section {
+  position: relative;
 }
 
-header img{
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-   
-   
+header img {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-nav img{
-    position: absolute;
-    top: 3%;
-    left: 97%;
-    transform: translateX(-97%);
-    color: white;
+nav img {
+  position: absolute;
+  top: 3%;
+  left: 97%;
+  transform: translateX(-97%);
+  color: white;
 }
-.first-section h2{
-    
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 4.5rem;
-    letter-spacing: 1rem;
-    font-family: Segoe UI;
-
+.first-section h2 {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 4.5rem;
+  letter-spacing: 1rem;
+  font-family: Segoe UI;
 }
-.second-section{
-   
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    
-}
-
-.second-section h2{
-    font-family: Akkurat Pro;
-    margin-top: 5rem;
-}
-.second-section p{
-    font-family: Akkurat Light Pro;
+.second-section {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(169, 149, 165),
+    rgb(201, 224, 174)
+  );
 }
 
+.second-section h2 {
+  font-family: Akkurat Pro;
+  
+}
+.second-section p {
+  font-family: Akkurat Light Pro;
+}
 
+.two-images img {
+  margin: 0.4rem;
+}
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+.num {
+  font-family: Migra;
+  font-size: 2rem;
+}
+.res-text {
+  font-family: Akkurat Light Pro;
+}
+footer {
+  position: relative;
+  background-color: white;
+}
+footer h4 {
+  font-family: Grotesk BE -medium;
+  font-weight: lighter;
+}
+footer span {
+  font-family: Grotesk BE - light;
+}
+footer a img {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.inner-wrap p span {
+  display: block;
+}
+.inner-wrap p span a {
+  text-decoration: none;
+  color: black;
+}
+.outer-wrap {
+ width: 80%;
+ margin: auto;
+ margin-top: 5rem; padding: 3rem 0;
+  
+ 
+}
 
-.two-images img{
-    margin: 0.4rem;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+.first-section h2 {
+  padding: 1rem;
+}
+.second-section {
+  width: 100%;
+  padding: 1rem;
+}
+.two-images img {
+  width: 90%;
 }
 .results{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 6rem;
+    padding: 0 1rem;
 }
-.num{
-    font-family: Migra;
-    font-size: 2rem;
+[class*="col-"] {
+    width: 50%;
+  }
+  .second-section h2 {
+    font-family: Akkurat Pro;
+    margin-top: 0rem;
+  }
+  .outer-wrap {
+    width: 90%;
+    margin-top: 0.1rem; 
+    padding: 1rem 0;
+    text-align: center;
+         
+   }
 }
-.res-text{
-    font-family: Akkurat Light Pro;
-}
-footer{
-    position: relative;
-    background-color: white;
-    
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
 }
-footer h4{
-    font-family: Grotesk BE -medium;
-    font-weight: lighter;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
 }
-footer span{
-    font-family: Grotesk BE - light;
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
 }
-footer a img{
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-    
-   
-}
-.inner-wrap p span{
-    display: block;
-}
-.inner-wrap p span a{
-    text-decoration: none;
-    color: black;
-}
-.outer-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
 }
