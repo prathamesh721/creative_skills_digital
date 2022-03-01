@@ -156,6 +156,7 @@ footer a img {
     .container {
         width: 100%;}
 .first-section h2 {
+    font-size: 2rem;
   padding: 1rem;
 }
 .second-section {
@@ -177,9 +178,9 @@ footer a img {
     margin-top: 0rem;
   }
   .outer-wrap {
-    width: 90%;
+    width: 95%;
     margin-top: 1rem; 
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     text-align: center;
          
    }
