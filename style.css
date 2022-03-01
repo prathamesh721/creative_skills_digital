@@ -186,6 +186,13 @@ footer a img {
   }
   header img {
     width: 10%;
+    top: 6%;
+  }
+  
+  nav img {
+    
+    top: 8%;
+    
   }
   .second-section {
     margin-top: -1rem;
