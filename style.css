@@ -108,7 +108,7 @@ nav img {
   font-family: Segoe UI;
 }
 .second-section {
-  padding: 1.5rem;
+  padding: 5rem;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -245,8 +245,17 @@ footer a img {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+  .results {
+    padding: 0 15rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
 }
