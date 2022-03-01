@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+@font-face {
+    font-family: Segoe UI;
+    src: url(./fonts/Segoe\ UI.ttf);
+}
+@font-face {
+    font-family: Akkurat Pro;
+    src: url(./fonts/AkkuratPro-Bold.otf);
+}
+@font-face {
+    font-family: Akkurat Light Pro;
+    src: url(./fonts/Akkurat-Light.ttf);
+}
+@font-face {
+    font-family: Migra;
+    src: url(./fonts/Migra-Extrabold.ttf);
+}
+@font-face {
+    font-family: Grotesk BE -medium;
+    src: url(./fonts/berthold-akzidenz-grotesk-be-regular.ttf);
+}
+@font-face {
+    font-family: Grotesk BE - light;
+    src: url(./fonts/akzidenz-grotesk-light.ttf);
+}
+
+
+.container{
+    width: 71.25rem;
+    background-image: linear-gradient(to bottom, rgb(169, 149, 165), rgb(201, 224, 174));
+    margin: auto;
+    margin-top: -1rem;
+    box-shadow: 0.12rem 0.31rem 0.6rem #888888;
+    
+}
+.first-section{
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+   
+}
+nav img{
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    transform: translateX(-97%);
+    color: white;
+}
+.first-section h2{
+    
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4.5rem;
+    letter-spacing: 1rem;
+    font-family: Segoe UI;
+
+}
+.second-section{
+   
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.second-section h2{
+    font-family: Akkurat Pro;
+    margin-top: 5rem;
+}
+.second-section p{
+    font-family: Akkurat Light Pro;
+}
+
+
+
+.two-images img{
+    margin: 0.4rem;
+}
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+.num{
+    font-family: Migra;
+    font-size: 2rem;
+}
+.res-text{
+    font-family: Akkurat Light Pro;
+}
+footer{
+    position: relative;
+    background-color: white;
+    
+
+}
+footer h4{
+    font-family: Grotesk BE -medium;
+    font-weight: lighter;
+}
+footer span{
+    font-family: Grotesk BE - light;
+}
+footer a img{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+   
+}
+.inner-wrap p span{
+    display: block;
+}
+.inner-wrap p span a{
+    text-decoration: none;
+    color: black;
+}
+.outer-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
